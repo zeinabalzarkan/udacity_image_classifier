@@ -1,0 +1,5 @@
+Training (using train.py):
+python train.py --data_directory ./flowers --save_dir ./checkpoint --epochs 5 --model vgg16 --hidden_units 512 --learning_rate 0.001 --gpu
+
+Prediction (using predict.py):
+python predict.py --input ./flowers/test/1/image_06752.jpg --checkpoint ./checkpoint.pth --top_k 5 --category_names cat_to_name.json --gpu
